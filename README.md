@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="460" height="300" src="https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/logo.jpeg">
+</p>
+
 ## Começando
 
 Faça o clone deste repositório e instale as dependencias usando:
