@@ -19,10 +19,25 @@ Acesse pelo seu navegador usando http://localhost:3000/
 ### Design
 
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/1.jpeg)
+
+2 -
+
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/2.jpeg)
+
+3 -
+
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/3.jpeg)
+
+4 -
+
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/4.jpeg)
+
+5 -
+
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/5.jpeg)
+
+6 -
+
 ![](https://github.com/JosiasFurtado/challengeAbstartups/blob/master/design/6.jpeg)
 
 ## Autor
