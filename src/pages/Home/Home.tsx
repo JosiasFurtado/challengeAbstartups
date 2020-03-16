@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Footer from "../../components/Footer"
 import { FaBars, FaCaretDown, FaCheckCircle } from "react-icons/fa"
+import { Line } from "rc-progress"
 
 const fakeRank = [
   {
@@ -12,6 +13,7 @@ const fakeRank = [
     img:
       "https://midia.ag/wp-content/uploads/2016/05/Logo-da-Nubank-na-midia-performa.png",
     pts: 1548,
+    percent: 70,
   },
   {
     id: "02",
@@ -21,6 +23,7 @@ const fakeRank = [
     medal: "https://i.imgur.com/asH5SQ8.png",
     img: "https://whatsrel.com.br/wp-content/uploads/2019/05/unnamed.jpg",
     pts: 1436,
+    percent: 70,
   },
   {
     id: "03",
@@ -30,6 +33,7 @@ const fakeRank = [
     medal: "https://i.imgur.com/7hdYf7y.png",
     img: "https://imagens.canaltech.com.br/empresas/2902.400.jpg",
     pts: 1379,
+    percent: 90,
   },
   {
     id: "04",
@@ -39,6 +43,7 @@ const fakeRank = [
     rankPosition: "4º",
     img: "https://seeklogo.com/images/U/uber-logo-9B6033C292-seeklogo.com.png",
     pts: 1254,
+    percent: 80,
   },
   {
     id: "05",
@@ -49,6 +54,7 @@ const fakeRank = [
     img:
       "https://d1fdloi71mui9q.cloudfront.net/QS882q7TpGxlOnwzu3vO_3cc6ae165bb5a84d484ee575f82bfd78",
     pts: 1124,
+    percent: 30,
   },
 ]
 
@@ -93,7 +99,7 @@ const Home: React.FC = () => {
         style={{
           backgroundImage: 'url("https://i.imgur.com/e339ZBc.png")',
         }}
-        className="w-auto bg-center bg-no-repeat mx-auto flex flex-col px-2 py-8"
+        className="max-w-6xl bg-center bg-no-repeat mx-auto flex flex-col px-2 py-8"
       >
         <div className="flex justify-end mb-4">
           <p className="text-gray-700 text-xl">
@@ -161,10 +167,22 @@ const Home: React.FC = () => {
                       <p className="text-2xl text-gray-700">Unicórnio</p>
                     </div>
                   ) : null}
+                  <div className="flex flex-col mb-4 w-full max-w-sm">
+                    Está na hora de investir?
+                    <div className="">
+                      <Line
+                        percent={startup.percent}
+                        strokeWidth={4}
+                        strokeColor="#4FE2A4"
+                      />
+                      <div className="flex w-full flex-row text-gray-700 text-xs justify-around">
+                        <p>Iniciante</p>
+                        <p>Madura</p>
+                        <p>Passou do ponto</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col mx-auto mb-4 text-center w-full max-w-sm">
-                Está na hora de investir?
               </div>
             </div>
           ))}
